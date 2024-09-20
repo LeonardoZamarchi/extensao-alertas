@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="UTF-8">
+  <title>Configurações - Alertas de Saúde</title>
+  <style>
+    body { font-family: Arial, sans-serif; margin: 20px; }
+    label { display: block; margin-top: 10px; }
+    input[type="number"] { width: 60px; }
+  </style>
+</head>
+<body>
+  <h1>Configurações dos Alertas</h1>
+
+  <h2>Intervalos (em minutos)</h2>
+  <div id="intervals">
+    <!-- Os campos serão gerados dinamicamente -->
+  </div>
+
+  <h2>Habilitar/Desabilitar Alertas</h2>
+  <div id="enabled">
+    <!-- Os campos serão gerados dinamicamente -->
+  </div>
+
+  <h2>Horário de Ativação</h2>
+  <label>
+    Início:
+    <input type="time" id="startTime" value="09:00">
+  </label>
+  <label>
+    Fim:
+    <input type="time" id="endTime" value="18:00">
+  </label>
+
+  <button id="save">Salvar Configurações</button>
+
+  <script src="options.js"></script>
+</body>
+</html>
